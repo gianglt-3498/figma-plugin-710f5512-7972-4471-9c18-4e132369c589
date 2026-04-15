@@ -1,0 +1,43 @@
+# Source files
+src/
+.storybook/
+stories/
+
+# Dev files
+*.log
+*.tsbuildinfo
+.DS_Store
+.env
+.env.local
+
+# Build artifacts
+node_modules/
+coverage/
+storybook-static/
+tmp/
+
+# Config files
+.vscode/
+.idea/
+*.config.js
+*.config.ts
+!vite.config.ts
+tsconfig*.json
+.eslintrc*
+.prettierrc*
+vitest.shims.d.ts
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+
+# Documentation (keep README.md)
+LIBRARY_GUIDE.md
+
+# Test files
+**/*.test.ts
+**/*.test.tsx
+**/*.spec.ts
+**/*.spec.tsx
+**/*.stories.tsx
+**/*.stories.ts

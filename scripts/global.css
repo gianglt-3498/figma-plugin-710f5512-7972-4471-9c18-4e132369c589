@@ -1,0 +1,639 @@
+@theme inline {
+  --color-black-alpha-100: #00000014;
+  --color-black-alpha-200: #00000021;
+  --color-black-alpha-25: #00000008;
+  --color-black-alpha-300: #00000033;
+  --color-black-alpha-400: #0000004d;
+  --color-black-alpha-50: #0000000d;
+  --color-black-alpha-500: #0000006e;
+  --color-black-alpha-600: #00000094;
+  --color-black-alpha-700: #000000b8;
+  --color-black-alpha-800: #000000d4;
+  --color-black-alpha-900: #000000eb;
+  --color-black: #000000;
+  --color-blue-100: #c3ebf7;
+  --color-blue-200: #8ed8f5;
+  --color-blue-300: #52b9f0;
+  --color-blue-400: #0d9aec;
+  --color-blue-50: #eaf7fe;
+  --color-blue-500: #007cd7;
+  --color-blue-600: #0464be;
+  --color-blue-700: #0053a4;
+  --color-blue-800: #003f88;
+  --color-blue-900: #002c6a;
+  --color-brand-sun-dark-red: #ad0c00;
+  --color-brand-sun-gold: #b69256;
+  --color-brand-sun-gray: #f7f7f7;
+  --color-brand-sun-red: #ff2200;
+  --color-brand-sun-white: #ffffff;
+  --color-brand-sun-yellow: #fdba05;
+  --color-gray-100: #e3e7ef;
+  --color-gray-200: #cdd6e3;
+  --color-gray-25: #f9fafb;
+  --color-gray-300: #b3bed0;
+  --color-gray-400: #8795ab;
+  --color-gray-50: #f0f2f5;
+  --color-gray-500: #69768b;
+  --color-gray-600: #4e5a6e;
+  --color-gray-700: #384356;
+  --color-gray-800: #293344;
+  --color-gray-900: #091d2f;
+  --color-green-100: #dcf8d2;
+  --color-green-200: #b4f3a3;
+  --color-green-300: #80e474;
+  --color-green-400: #4fcb58;
+  --color-green-50: #f1fdef;
+  --color-green-500: #2aa847;
+  --color-green-600: #0a8739;
+  --color-green-700: #007430;
+  --color-green-800: #035e27;
+  --color-green-900: #07441e;
+  --color-neutral-100: #e7e7e7;
+  --color-neutral-200: #d5d5d5;
+  --color-neutral-25: #fafafa;
+  --color-neutral-300: #bdbdbd;
+  --color-neutral-400: #959595;
+  --color-neutral-50: #f2f2f2;
+  --color-neutral-500: #757575;
+  --color-neutral-600: #5a5a5a;
+  --color-neutral-700: #434343;
+  --color-neutral-800: #333333;
+  --color-neutral-900: #1c1c1c;
+  --color-orange-100: #fdebca;
+  --color-orange-200: #fad18a;
+  --color-orange-300: #f9ac4b;
+  --color-orange-400: #f08627;
+  --color-orange-50: #fef6e6;
+  --color-orange-500: #df6600;
+  --color-orange-600: #ba5017;
+  --color-orange-700: #983e1d;
+  --color-orange-800: #74301b;
+  --color-orange-900: #5b220d;
+  --color-purple-100: #f5d8f8;
+  --color-purple-200: #e6b5f4;
+  --color-purple-300: #d18df0;
+  --color-purple-400: #b76ae6;
+  --color-purple-50: #fef5fd;
+  --color-purple-500: #9a4ad6;
+  --color-purple-600: #803bbc;
+  --color-purple-700: #643098;
+  --color-purple-800: #4d2a77;
+  --color-purple-900: #361f50;
+  --color-red-100: #fedbd5;
+  --color-red-200: #fdb5a8;
+  --color-red-300: #fd8c77;
+  --color-red-400: #fc593f;
+  --color-red-50: #fff4f2;
+  --color-red-500: #e62305;
+  --color-red-600: #c50e03;
+  --color-red-700: #a50206;
+  --color-red-800: #85010f;
+  --color-red-900: #660614;
+  --color-white-alpha-100: #ffffff14;
+  --color-white-alpha-200: #ffffff21;
+  --color-white-alpha-25: #ffffff08;
+  --color-white-alpha-300: #ffffff33;
+  --color-white-alpha-400: #ffffff4d;
+  --color-white-alpha-50: #ffffff0d;
+  --color-white-alpha-500: #ffffff6e;
+  --color-white-alpha-600: #ffffff94;
+  --color-white-alpha-700: #ffffffb8;
+  --color-white-alpha-800: #ffffffd4;
+  --color-white-alpha-900: #ffffffeb;
+  --color-white: #ffffff;
+  --color-yellow-100: #fef6b9;
+  --color-yellow-200: #feec83;
+  --color-yellow-300: #f9d956;
+  --color-yellow-400: #eebb24;
+  --color-yellow-50: #fbfaeb;
+  --color-yellow-500: #dda200;
+  --color-yellow-600: #b7791f;
+  --color-yellow-700: #975a16;
+  --color-yellow-800: #724317;
+  --color-yellow-900: #513210;
+  --color-background-base: var(--color-white);
+  --color-background-caution: var(--color-yellow-50);
+  --color-background-container-inverse: var(--color-neutral-800);
+  --color-background-container: var(--color-neutral-25);
+  --color-background-danger: var(--color-red-100);
+  --color-background-emphasis: var(--color-red-50);
+  --color-background-info: var(--color-blue-50);
+  --color-background-scrim: var(--color-black-alpha-600);
+  --color-background-success: var(--color-green-50);
+  --color-border-basic: var(--color-neutral-300);
+  --color-border-caution: var(--color-yellow-700);
+  --color-border-danger: var(--color-red-600);
+  --color-border-disable: var(--color-neutral-100);
+  --color-border-emphasis: var(--color-red-500);
+  --color-border-focus: var(--color-blue-600);
+  --color-border-info: var(--color-blue-700);
+  --color-border-strong: var(--color-neutral-800);
+  --color-border-success: var(--color-green-700);
+  --color-border-weak: var(--color-neutral-100);
+  --color-icon-caution-inverse: var(--color-yellow-400);
+  --color-icon-caution: var(--color-yellow-400);
+  --color-icon-danger-inverse: var(--color-red-400);
+  --color-icon-danger: var(--color-red-500);
+  --color-icon-disable: var(--color-neutral-300);
+  --color-icon-emphasis: var(--color-red-500);
+  --color-icon-info-inverse: var(--color-blue-400);
+  --color-icon-info: var(--color-blue-600);
+  --color-icon-on-surface-inverse-disable: var(--color-neutral-600);
+  --color-icon-on-surface-inverse: var(--color-neutral-800);
+  --color-icon-on-surface: var(--color-white);
+  --color-icon-primary-hover: var(--color-neutral-700);
+  --color-icon-primary: var(--color-neutral-800);
+  --color-icon-secondary-hover: var(--color-neutral-500);
+  --color-icon-secondary: var(--color-neutral-600);
+  --color-icon-success-inverse: var(--color-green-400);
+  --color-icon-success: var(--color-green-500);
+  --color-icon-tertiary: var(--color-neutral-400);
+  --color-surface-base: var(--color-white);
+  --color-surface-caution: var(--color-yellow-200);
+  --color-surface-danger: var(--color-red-500);
+  --color-surface-disabled-strong: var(--color-neutral-200);
+  --color-surface-disabled: var(--color-neutral-50);
+  --color-surface-emphasis-active: var(--color-red-600);
+  --color-surface-emphasis-hover: var(--color-red-400);
+  --color-surface-emphasis: var(--color-red-500);
+  --color-surface-info: var(--color-blue-500);
+  --color-surface-primary-active: var(--color-neutral-900);
+  --color-surface-primary-hover: var(--color-neutral-600);
+  --color-surface-primary: var(--color-neutral-700);
+  --color-surface-secondary-active: var(--color-gray-400);
+  --color-surface-secondary-hover: var(--color-gray-100);
+  --color-surface-secondary: var(--color-gray-300);
+  --color-surface-subtle-active-inverse: var(--color-white-alpha-100);
+  --color-surface-subtle-active: var(--color-black-alpha-400);
+  --color-surface-subtle-hover-inverse: var(--color-white-alpha-300);
+  --color-surface-subtle-hover: var(--color-black-alpha-50);
+  --color-surface-subtle-inverse: var(--color-white-alpha-200);
+  --color-surface-subtle: var(--color-black-alpha-100);
+  --color-surface-success: var(--color-green-400);
+  --color-text-caution: var(--color-yellow-700);
+  --color-text-danger: var(--color-red-600);
+  --color-text-disable: var(--color-neutral-400);
+  --color-text-emphasis: var(--color-red-500);
+  --color-text-info: var(--color-blue-700);
+  --color-text-link: var(--color-blue-600);
+  --color-text-on-surface-inverse: var(--color-neutral-800);
+  --color-text-on-surface: var(--color-white);
+  --color-text-placeholder: var(--color-neutral-500);
+  --color-text-primary-inverse: var(--color-white);
+  --color-text-primary: var(--color-neutral-800);
+  --color-text-secondary: var(--color-neutral-600);
+  --color-text-success: var(--color-green-700);
+  --color-text-tertiary: var(--color-neutral-400);
+  --spacing-3xl: 3rem;
+  --spacing-4xl: 4rem;
+  --spacing-5xl: 5rem;
+  --spacing-l: 1.5rem;
+  --spacing-m: 1rem;
+  --spacing-s: 0.75rem;
+  --spacing-xl: 2rem;
+  --spacing-xs: 0.5rem;
+  --spacing-xxl: 2.5rem;
+  --spacing-xxs: 0.25rem;
+  --radius-full: 62.4375rem;
+  --radius-l: 1rem;
+  --radius-m: 0.5rem;
+  --radius-none: 0rem;
+  --radius-s: 0.25rem;
+  --radius-xl: 1.5rem;
+  --radius-xs: 0.125rem;
+  --shadow-level-1: 0px 1px 2px 0px #00000033;
+  --shadow-level-1: 0px 1px 4px 1px #00000026;
+  --shadow-level-2: 0px 1px 2px 0px #00000033;
+  --shadow-level-2: 0px 2px 6px 2px #00000026;
+  --shadow-level-3: 0px 3px 8px 3px #00000026;
+  --shadow-level-3: 1px 1px 3px 0px #00000033;
+  --shadow-level-4: 0px 2px 4px 0px #00000033;
+  --shadow-level-4: 1px 4px 10px 4px #00000026;
+  --shadow-level-5: 0px 4px 6px 0px #00000033;
+  --shadow-level-5: 2px 7px 16px 4px #00000026;
+  --font-family-eina-03: 'Eina 03';
+  --font-family-noto-sans-jp: 'Noto Sans JP';
+  --font-size-desktop-eg-body-l: 1rem;
+  --font-size-desktop-eg-body-m: 0.875rem;
+  --font-size-desktop-eg-heading-h1: 3rem;
+  --font-size-desktop-eg-heading-h2: 2rem;
+  --font-size-desktop-eg-heading-h3: 1.5rem;
+  --font-size-desktop-eg-label-l: 1rem;
+  --font-size-desktop-eg-label-m: 0.875rem;
+  --font-size-desktop-eg-label-s: 0.75rem;
+  --font-size-desktop-eg-title-l: 3rem;
+  --font-size-desktop-eg-title-m: 2rem;
+  --font-size-desktop-eg-title-s: 1.375rem;
+  --font-size-desktop-ja-body-l: 1rem;
+  --font-size-desktop-ja-body-m: 0.875rem;
+  --font-size-desktop-ja-body-s: 0.75rem;
+  --font-size-desktop-ja-heading-h1: 3rem;
+  --font-size-desktop-ja-heading-h2: 2rem;
+  --font-size-desktop-ja-heading-h3: 1.5rem;
+  --font-size-desktop-ja-label-l: 1rem;
+  --font-size-desktop-ja-label-m: 0.875rem;
+  --font-size-desktop-ja-label-s: 0.75rem;
+  --font-size-desktop-ja-title-l: 2.5rem;
+  --font-size-desktop-ja-title-m: 2rem;
+  --font-size-desktop-ja-title-s: 1.375rem;
+  --font-size-mobile-eg-body-l: 1rem;
+  --font-size-mobile-eg-body-m: 0.875rem;
+  --font-size-mobile-eg-body-s: 0.75rem;
+  --font-size-mobile-eg-heading-h1: 2rem;
+  --font-size-mobile-eg-heading-h2: 1.5rem;
+  --font-size-mobile-eg-heading-h3: 1.25rem;
+  --font-size-mobile-eg-label-l: 1rem;
+  --font-size-mobile-eg-label-m: 0.875rem;
+  --font-size-mobile-eg-label-s: 0.75rem;
+  --font-size-mobile-eg-title-l: 1.5rem;
+  --font-size-mobile-eg-title-m: 1.25rem;
+  --font-size-mobile-eg-title-s: 1.125rem;
+  --font-size-mobile-ja-body-l: 1rem;
+  --font-size-mobile-ja-body-m: 0.875rem;
+  --font-size-mobile-ja-body-s: 0.75rem;
+  --font-size-mobile-ja-heading-h1: 2rem;
+  --font-size-mobile-ja-heading-h2: 1.5rem;
+  --font-size-mobile-ja-heading-h3: 1.25rem;
+  --font-size-mobile-ja-label-l: 1rem;
+  --font-size-mobile-ja-label-m: 0.875rem;
+  --font-size-mobile-ja-label-s: 0.75rem;
+  --font-size-mobile-ja-title-l: 1.5rem;
+  --font-size-mobile-ja-title-m: 1.25rem;
+  --font-size-mobile-ja-title-s: 1.125rem;
+  --font-weight-desktop-eg-body-l: 400;
+  --font-weight-desktop-eg-body-m: 400;
+  --font-weight-desktop-eg-heading-h1: 700;
+  --font-weight-desktop-eg-heading-h2: 700;
+  --font-weight-desktop-eg-heading-h3: 700;
+  --font-weight-desktop-eg-label-l: 700;
+  --font-weight-desktop-eg-label-m: 700;
+  --font-weight-desktop-eg-label-s: 700;
+  --font-weight-desktop-eg-title-l: 700;
+  --font-weight-desktop-eg-title-m: 700;
+  --font-weight-desktop-eg-title-s: 700;
+  --font-weight-desktop-ja-body-l: 400;
+  --font-weight-desktop-ja-body-m: 400;
+  --font-weight-desktop-ja-body-s: 400;
+  --font-weight-desktop-ja-heading-h1: 700;
+  --font-weight-desktop-ja-heading-h2: 700;
+  --font-weight-desktop-ja-heading-h3: 700;
+  --font-weight-desktop-ja-label-l: 700;
+  --font-weight-desktop-ja-label-m: 700;
+  --font-weight-desktop-ja-label-s: 700;
+  --font-weight-desktop-ja-title-l: 700;
+  --font-weight-desktop-ja-title-m: 700;
+  --font-weight-desktop-ja-title-s: 700;
+  --font-weight-mobile-eg-body-l: 400;
+  --font-weight-mobile-eg-body-m: 400;
+  --font-weight-mobile-eg-body-s: 400;
+  --font-weight-mobile-eg-heading-h1: 600;
+  --font-weight-mobile-eg-heading-h2: 700;
+  --font-weight-mobile-eg-heading-h3: 700;
+  --font-weight-mobile-eg-label-l: 700;
+  --font-weight-mobile-eg-label-m: 700;
+  --font-weight-mobile-eg-label-s: 700;
+  --font-weight-mobile-eg-title-l: 700;
+  --font-weight-mobile-eg-title-m: 700;
+  --font-weight-mobile-eg-title-s: 700;
+  --font-weight-mobile-ja-body-l: 400;
+  --font-weight-mobile-ja-body-m: 400;
+  --font-weight-mobile-ja-body-s: 400;
+  --font-weight-mobile-ja-heading-h1: 700;
+  --font-weight-mobile-ja-heading-h2: 700;
+  --font-weight-mobile-ja-heading-h3: 700;
+  --font-weight-mobile-ja-label-l: 700;
+  --font-weight-mobile-ja-label-m: 700;
+  --font-weight-mobile-ja-label-s: 700;
+  --font-weight-mobile-ja-title-l: 700;
+  --font-weight-mobile-ja-title-m: 700;
+  --font-weight-mobile-ja-title-s: 700;
+  --line-height-desktop-eg-body-l: 1.6rem;
+  --line-height-desktop-eg-body-m: 1.4rem;
+  --line-height-desktop-eg-heading-h1: 4.2rem;
+  --line-height-desktop-eg-heading-h2: 2.8rem;
+  --line-height-desktop-eg-heading-h3: 2.1rem;
+  --line-height-desktop-eg-label-l: 1rem;
+  --line-height-desktop-eg-label-m: 0.875rem;
+  --line-height-desktop-eg-label-s: 0.75rem;
+  --line-height-desktop-eg-title-l: 4.5rem;
+  --line-height-desktop-eg-title-m: 3rem;
+  --line-height-desktop-eg-title-s: 2.2rem;
+  --line-height-desktop-ja-body-l: 1.6rem;
+  --line-height-desktop-ja-body-m: 1.4rem;
+  --line-height-desktop-ja-body-s: 1.3125rem;
+  --line-height-desktop-ja-heading-h1: 4.2rem;
+  --line-height-desktop-ja-heading-h2: 2.8rem;
+  --line-height-desktop-ja-heading-h3: 2.1rem;
+  --line-height-desktop-ja-label-l: 1rem;
+  --line-height-desktop-ja-label-m: 0.875rem;
+  --line-height-desktop-ja-label-s: 0.75rem;
+  --line-height-desktop-ja-title-l: 3.75rem;
+  --line-height-desktop-ja-title-m: 3rem;
+  --line-height-desktop-ja-title-s: 2.2rem;
+  --line-height-mobile-eg-body-l: 1.6rem;
+  --line-height-mobile-eg-body-m: 1.4rem;
+  --line-height-mobile-eg-body-s: 1.2rem;
+  --line-height-mobile-eg-heading-h1: 2.8rem;
+  --line-height-mobile-eg-heading-h2: 2.1rem;
+  --line-height-mobile-eg-heading-h3: 1.75rem;
+  --line-height-mobile-eg-label-l: 1rem;
+  --line-height-mobile-eg-label-m: 0.875rem;
+  --line-height-mobile-eg-label-s: 0.75rem;
+  --line-height-mobile-eg-title-l: 2.25rem;
+  --line-height-mobile-eg-title-m: 1.875rem;
+  --line-height-mobile-eg-title-s: 1.6875rem;
+  --line-height-mobile-ja-body-l: 1.6rem;
+  --line-height-mobile-ja-body-m: 1.4rem;
+  --line-height-mobile-ja-body-s: 1.2rem;
+  --line-height-mobile-ja-heading-h1: 2.8rem;
+  --line-height-mobile-ja-heading-h2: 2.1rem;
+  --line-height-mobile-ja-heading-h3: 1.75rem;
+  --line-height-mobile-ja-label-l: 1rem;
+  --line-height-mobile-ja-label-m: 0.875rem;
+  --line-height-mobile-ja-label-s: 0.75rem;
+  --line-height-mobile-ja-title-l: 2.25rem;
+  --line-height-mobile-ja-title-m: 1.875rem;
+  --line-height-mobile-ja-title-s: 1.6875rem;
+}
+
+@utility typo-desktop-eg-body-l {
+  font-size: var(--font-size-desktop-eg-body-l);
+  line-height: var(--line-height-desktop-eg-body-l);
+  font-weight: var(--font-weight-desktop-eg-body-l);
+}
+
+@utility typo-desktop-eg-body-m {
+  font-size: var(--font-size-desktop-eg-body-m);
+  line-height: var(--line-height-desktop-eg-body-m);
+  font-weight: var(--font-weight-desktop-eg-body-m);
+}
+
+@utility typo-desktop-eg-heading-h1 {
+  font-size: var(--font-size-desktop-eg-heading-h1);
+  line-height: var(--line-height-desktop-eg-heading-h1);
+  font-weight: var(--font-weight-desktop-eg-heading-h1);
+}
+
+@utility typo-desktop-eg-heading-h2 {
+  font-size: var(--font-size-desktop-eg-heading-h2);
+  line-height: var(--line-height-desktop-eg-heading-h2);
+  font-weight: var(--font-weight-desktop-eg-heading-h2);
+}
+
+@utility typo-desktop-eg-heading-h3 {
+  font-size: var(--font-size-desktop-eg-heading-h3);
+  line-height: var(--line-height-desktop-eg-heading-h3);
+  font-weight: var(--font-weight-desktop-eg-heading-h3);
+}
+
+@utility typo-desktop-eg-label-l {
+  font-size: var(--font-size-desktop-eg-label-l);
+  line-height: var(--line-height-desktop-eg-label-l);
+  font-weight: var(--font-weight-desktop-eg-label-l);
+}
+
+@utility typo-desktop-eg-label-m {
+  font-size: var(--font-size-desktop-eg-label-m);
+  line-height: var(--line-height-desktop-eg-label-m);
+  font-weight: var(--font-weight-desktop-eg-label-m);
+}
+
+@utility typo-desktop-eg-label-s {
+  font-size: var(--font-size-desktop-eg-label-s);
+  line-height: var(--line-height-desktop-eg-label-s);
+  font-weight: var(--font-weight-desktop-eg-label-s);
+}
+
+@utility typo-desktop-eg-title-l {
+  font-size: var(--font-size-desktop-eg-title-l);
+  line-height: var(--line-height-desktop-eg-title-l);
+  font-weight: var(--font-weight-desktop-eg-title-l);
+}
+
+@utility typo-desktop-eg-title-m {
+  font-size: var(--font-size-desktop-eg-title-m);
+  line-height: var(--line-height-desktop-eg-title-m);
+  font-weight: var(--font-weight-desktop-eg-title-m);
+}
+
+@utility typo-desktop-eg-title-s {
+  font-size: var(--font-size-desktop-eg-title-s);
+  line-height: var(--line-height-desktop-eg-title-s);
+  font-weight: var(--font-weight-desktop-eg-title-s);
+}
+
+@utility typo-desktop-ja-body-l {
+  font-size: var(--font-size-desktop-ja-body-l);
+  line-height: var(--line-height-desktop-ja-body-l);
+  font-weight: var(--font-weight-desktop-ja-body-l);
+}
+
+@utility typo-desktop-ja-body-m {
+  font-size: var(--font-size-desktop-ja-body-m);
+  line-height: var(--line-height-desktop-ja-body-m);
+  font-weight: var(--font-weight-desktop-ja-body-m);
+}
+
+@utility typo-desktop-ja-body-s {
+  font-size: var(--font-size-desktop-ja-body-s);
+  line-height: var(--line-height-desktop-ja-body-s);
+  font-weight: var(--font-weight-desktop-ja-body-s);
+}
+
+@utility typo-desktop-ja-heading-h1 {
+  font-size: var(--font-size-desktop-ja-heading-h1);
+  line-height: var(--line-height-desktop-ja-heading-h1);
+  font-weight: var(--font-weight-desktop-ja-heading-h1);
+}
+
+@utility typo-desktop-ja-heading-h2 {
+  font-size: var(--font-size-desktop-ja-heading-h2);
+  line-height: var(--line-height-desktop-ja-heading-h2);
+  font-weight: var(--font-weight-desktop-ja-heading-h2);
+}
+
+@utility typo-desktop-ja-heading-h3 {
+  font-size: var(--font-size-desktop-ja-heading-h3);
+  line-height: var(--line-height-desktop-ja-heading-h3);
+  font-weight: var(--font-weight-desktop-ja-heading-h3);
+}
+
+@utility typo-desktop-ja-label-l {
+  font-size: var(--font-size-desktop-ja-label-l);
+  line-height: var(--line-height-desktop-ja-label-l);
+  font-weight: var(--font-weight-desktop-ja-label-l);
+}
+
+@utility typo-desktop-ja-label-m {
+  font-size: var(--font-size-desktop-ja-label-m);
+  line-height: var(--line-height-desktop-ja-label-m);
+  font-weight: var(--font-weight-desktop-ja-label-m);
+}
+
+@utility typo-desktop-ja-label-s {
+  font-size: var(--font-size-desktop-ja-label-s);
+  line-height: var(--line-height-desktop-ja-label-s);
+  font-weight: var(--font-weight-desktop-ja-label-s);
+}
+
+@utility typo-desktop-ja-title-l {
+  font-size: var(--font-size-desktop-ja-title-l);
+  line-height: var(--line-height-desktop-ja-title-l);
+  font-weight: var(--font-weight-desktop-ja-title-l);
+}
+
+@utility typo-desktop-ja-title-m {
+  font-size: var(--font-size-desktop-ja-title-m);
+  line-height: var(--line-height-desktop-ja-title-m);
+  font-weight: var(--font-weight-desktop-ja-title-m);
+}
+
+@utility typo-desktop-ja-title-s {
+  font-size: var(--font-size-desktop-ja-title-s);
+  line-height: var(--line-height-desktop-ja-title-s);
+  font-weight: var(--font-weight-desktop-ja-title-s);
+}
+
+@utility typo-mobile-eg-body-l {
+  font-size: var(--font-size-mobile-eg-body-l);
+  line-height: var(--line-height-mobile-eg-body-l);
+  font-weight: var(--font-weight-mobile-eg-body-l);
+}
+
+@utility typo-mobile-eg-body-m {
+  font-size: var(--font-size-mobile-eg-body-m);
+  line-height: var(--line-height-mobile-eg-body-m);
+  font-weight: var(--font-weight-mobile-eg-body-m);
+}
+
+@utility typo-mobile-eg-body-s {
+  font-size: var(--font-size-mobile-eg-body-s);
+  line-height: var(--line-height-mobile-eg-body-s);
+  font-weight: var(--font-weight-mobile-eg-body-s);
+}
+
+@utility typo-mobile-eg-heading-h1 {
+  font-size: var(--font-size-mobile-eg-heading-h1);
+  line-height: var(--line-height-mobile-eg-heading-h1);
+  font-weight: var(--font-weight-mobile-eg-heading-h1);
+}
+
+@utility typo-mobile-eg-heading-h2 {
+  font-size: var(--font-size-mobile-eg-heading-h2);
+  line-height: var(--line-height-mobile-eg-heading-h2);
+  font-weight: var(--font-weight-mobile-eg-heading-h2);
+}
+
+@utility typo-mobile-eg-heading-h3 {
+  font-size: var(--font-size-mobile-eg-heading-h3);
+  line-height: var(--line-height-mobile-eg-heading-h3);
+  font-weight: var(--font-weight-mobile-eg-heading-h3);
+}
+
+@utility typo-mobile-eg-label-l {
+  font-size: var(--font-size-mobile-eg-label-l);
+  line-height: var(--line-height-mobile-eg-label-l);
+  font-weight: var(--font-weight-mobile-eg-label-l);
+}
+
+@utility typo-mobile-eg-label-m {
+  font-size: var(--font-size-mobile-eg-label-m);
+  line-height: var(--line-height-mobile-eg-label-m);
+  font-weight: var(--font-weight-mobile-eg-label-m);
+}
+
+@utility typo-mobile-eg-label-s {
+  font-size: var(--font-size-mobile-eg-label-s);
+  line-height: var(--line-height-mobile-eg-label-s);
+  font-weight: var(--font-weight-mobile-eg-label-s);
+}
+
+@utility typo-mobile-eg-title-l {
+  font-size: var(--font-size-mobile-eg-title-l);
+  line-height: var(--line-height-mobile-eg-title-l);
+  font-weight: var(--font-weight-mobile-eg-title-l);
+}
+
+@utility typo-mobile-eg-title-m {
+  font-size: var(--font-size-mobile-eg-title-m);
+  line-height: var(--line-height-mobile-eg-title-m);
+  font-weight: var(--font-weight-mobile-eg-title-m);
+}
+
+@utility typo-mobile-eg-title-s {
+  font-size: var(--font-size-mobile-eg-title-s);
+  line-height: var(--line-height-mobile-eg-title-s);
+  font-weight: var(--font-weight-mobile-eg-title-s);
+}
+
+@utility typo-mobile-ja-body-l {
+  font-size: var(--font-size-mobile-ja-body-l);
+  line-height: var(--line-height-mobile-ja-body-l);
+  font-weight: var(--font-weight-mobile-ja-body-l);
+}
+
+@utility typo-mobile-ja-body-m {
+  font-size: var(--font-size-mobile-ja-body-m);
+  line-height: var(--line-height-mobile-ja-body-m);
+  font-weight: var(--font-weight-mobile-ja-body-m);
+}
+
+@utility typo-mobile-ja-body-s {
+  font-size: var(--font-size-mobile-ja-body-s);
+  line-height: var(--line-height-mobile-ja-body-s);
+  font-weight: var(--font-weight-mobile-ja-body-s);
+}
+
+@utility typo-mobile-ja-heading-h1 {
+  font-size: var(--font-size-mobile-ja-heading-h1);
+  line-height: var(--line-height-mobile-ja-heading-h1);
+  font-weight: var(--font-weight-mobile-ja-heading-h1);
+}
+
+@utility typo-mobile-ja-heading-h2 {
+  font-size: var(--font-size-mobile-ja-heading-h2);
+  line-height: var(--line-height-mobile-ja-heading-h2);
+  font-weight: var(--font-weight-mobile-ja-heading-h2);
+}
+
+@utility typo-mobile-ja-heading-h3 {
+  font-size: var(--font-size-mobile-ja-heading-h3);
+  line-height: var(--line-height-mobile-ja-heading-h3);
+  font-weight: var(--font-weight-mobile-ja-heading-h3);
+}
+
+@utility typo-mobile-ja-label-l {
+  font-size: var(--font-size-mobile-ja-label-l);
+  line-height: var(--line-height-mobile-ja-label-l);
+  font-weight: var(--font-weight-mobile-ja-label-l);
+}
+
+@utility typo-mobile-ja-label-m {
+  font-size: var(--font-size-mobile-ja-label-m);
+  line-height: var(--line-height-mobile-ja-label-m);
+  font-weight: var(--font-weight-mobile-ja-label-m);
+}
+
+@utility typo-mobile-ja-label-s {
+  font-size: var(--font-size-mobile-ja-label-s);
+  line-height: var(--line-height-mobile-ja-label-s);
+  font-weight: var(--font-weight-mobile-ja-label-s);
+}
+
+@utility typo-mobile-ja-title-l {
+  font-size: var(--font-size-mobile-ja-title-l);
+  line-height: var(--line-height-mobile-ja-title-l);
+  font-weight: var(--font-weight-mobile-ja-title-l);
+}
+
+@utility typo-mobile-ja-title-m {
+  font-size: var(--font-size-mobile-ja-title-m);
+  line-height: var(--line-height-mobile-ja-title-m);
+  font-weight: var(--font-weight-mobile-ja-title-m);
+}
+
+@utility typo-mobile-ja-title-s {
+  font-size: var(--font-size-mobile-ja-title-s);
+  line-height: var(--line-height-mobile-ja-title-s);
+  font-weight: var(--font-weight-mobile-ja-title-s);
+}
